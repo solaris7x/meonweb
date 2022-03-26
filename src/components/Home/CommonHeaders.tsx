@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-const CommonHead = () => {
+const CommonHeaders = () => {
   return (
     <Head>
       {/* <!-- TODO: Add appropriate meta headers --> */}
@@ -28,4 +28,4 @@ const CommonHead = () => {
     </Head>
   )
 }
-export default CommonHead
+export default CommonHeaders

@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@iconify/react': ^3.2.0
   '@types/node': 17.0.23
   '@types/react': 17.0.43
   autoprefixer: ^10.4.4
@@ -12,14 +13,17 @@ specifiers:
   react: 17.0.2
   react-dom: 17.0.2
   tailwindcss: ^3.0.23
+  typed.js: ^2.0.12
   typescript: 4.6.3
 
 dependencies:
   next: 12.1.0_react-dom@17.0.2+react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  typed.js: 2.0.12
 
 devDependencies:
+  '@iconify/react': 3.2.0
   '@types/node': 17.0.23
   '@types/react': 17.0.43
   autoprefixer: 10.4.4_postcss@8.4.12
@@ -98,6 +102,10 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify/react/3.2.0:
+    resolution: {integrity: sha512-nHmPeBGn4KKS8DwDjGrZ9SLpoMmZ+dKZ53s2msBftg6srESMWBUOMW/XBMRjnUjzwQQchguVEhhh59LSSAia/g==}
     dev: true
 
   /@next/env/12.1.0:
@@ -2068,6 +2076,10 @@ packages:
     resolution: {integrity: sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==}
     engines: {node: '>=10'}
     dev: true
+
+  /typed.js/2.0.12:
+    resolution: {integrity: sha512-lyACZh1cu+vpfYY3DG/bvsGLXXbdoDDpWxmqta10IQUdMXisMXOEyl+jos+YT9uBbzK4QaKYBjT3R0kTJO0Slw==}
+    dev: false
 
   /typescript/4.6.3:
     resolution: {integrity: sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==}
