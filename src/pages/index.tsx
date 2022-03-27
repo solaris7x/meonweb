@@ -4,6 +4,7 @@ import CommonHeaders from "../components/Home/CommonHeaders"
 import Splash from "../components/Home/Splash"
 import About from "../components/Home/About"
 import Skills from "../components/Home/Skills"
+import Qualifications from "../components/Home/Qualifications"
 
 const Home: NextPage = () => {
   return (
@@ -21,12 +22,38 @@ const Home: NextPage = () => {
           {/* Skills */}
           <Skills />
           {/* Qualifications */}
-          {/* <Qualifications /> */}
+          <Qualifications
+            tabs={[
+              {
+                icon: "uil:graduation-cap",
+                title: "Education",
+                items: [
+                  {
+                    title:
+                      "BTech Computer Science & Engineering (Cloud Technology & Information Security)",
+                    subtitle: "Jain Deemed-to-be University",
+                    dateString: "2018 - 2022",
+                  },
+                  {
+                    title: "12th - PCM-CS",
+                    subtitle: "Muljibhai Mehta International School, Virar",
+                    dateString: "2016 - 2017",
+                  },
+                  {
+                    title: "10th - CBSE",
+                    subtitle: "Muljibhai Mehta International School, Virar",
+                    dateString: "2014 - 2015",
+                  },
+                ],
+              },
+            ]}
+          />
           {/* TODO: Portfolio */}
           {/* <section className="portfolio section" id="projects"></section> */}
           {/* Contact Me */}
           {/* <ContactMe /> */}
         </main>
+        <div className="py-10"></div>
         {/* Footer */}
         {/* <Footer /> */}
         {/* Scroll Top */}
