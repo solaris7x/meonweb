@@ -6,6 +6,7 @@ import About from "../components/Home/About"
 import Skills from "../components/Home/Skills"
 import Qualifications from "../components/Home/Qualifications"
 import ContactMe from "../components/Home/ContactMe"
+import Footer from "../components/Footer"
 
 const Home: NextPage = () => {
   return (
@@ -74,9 +75,39 @@ const Home: NextPage = () => {
             ]}
           />
         </main>
-        <div className="py-10"></div>
         {/* Footer */}
-        {/* <Footer /> */}
+        <Footer
+          name="Aditya Patil"
+          subtitle="Cloud Developer"
+          links={[
+            {
+              title: "About",
+              link: "#about",
+            },
+            {
+              title: "Projects",
+              link: "https://github.com/solaris7x?tab=repositories",
+            },
+            {
+              title: "Contact Me",
+              link: "#contact",
+            },
+          ]}
+          social={[
+            {
+              icon: "uil:linkedin-alt",
+              link: "https://www.linkedin.com/in/patil11aditya/",
+            },
+            {
+              icon: "uil:twitter-alt",
+              link: "https://twitter.com/_solaris7",
+            },
+            {
+              icon: "uil:github",
+              link: "https://github.com/solaris7x",
+            },
+          ]}
+        />
         {/* Scroll Top */}
         {/* <a href="#" className="scrollup" id="scroll-up">
           <Icon icon="uil:arrow-up" className=" scrollup_icon" />

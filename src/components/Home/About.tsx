@@ -6,7 +6,7 @@ const About = () => {
       <h2 className="text-4xl font-bold text-center">About Me</h2>
       <div className="text-gray-500 text-center">My introduction</div>
       <div className="my-12">
-        <div className="text-lg text-gray-700">
+        <div className="text-lg">
           Hi! 👋 I{"'"}m Aditya, A Dev/Ops engineering that aims to provide a
           seamless journey from development to operations with a strong grasp of
           Web technologies and Cloud Computing Saas, PaaS, laaS deployment

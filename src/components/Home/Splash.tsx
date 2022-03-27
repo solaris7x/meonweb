@@ -73,7 +73,7 @@ const Splash = () => {
           <img
             src="./assets/img/me.jpg"
             alt="Aditya Patil"
-            className="rounded-full object-cover p-[15%] order-1 md:order-2"
+            className="w-full rounded-full object-cover p-[15%] order-1 md:order-2"
           />
         </div>
       </div>
