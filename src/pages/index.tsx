@@ -5,6 +5,7 @@ import Splash from "../components/Home/Splash"
 import About from "../components/Home/About"
 import Skills from "../components/Home/Skills"
 import Qualifications from "../components/Home/Qualifications"
+import ContactMe from "../components/Home/ContactMe"
 
 const Home: NextPage = () => {
   return (
@@ -51,7 +52,27 @@ const Home: NextPage = () => {
           {/* TODO: Portfolio */}
           {/* <section className="portfolio section" id="projects"></section> */}
           {/* Contact Me */}
-          {/* <ContactMe /> */}
+          <ContactMe
+            items={[
+              {
+                icon: "uil:envelope",
+                title: "Email",
+                subtitle: "patil11aditya@gmail.com",
+                link: "mailto:patil11aditya@gmail.com",
+              },
+              {
+                icon: "uil:twitter",
+                title: "Twitter",
+                subtitle: "@_solaris7",
+                link: "https://twitter.com/_solaris7",
+              },
+              {
+                icon: "uil:location-point",
+                title: "Location",
+                subtitle: "Mumbai, India",
+              },
+            ]}
+          />
         </main>
         <div className="py-10"></div>
         {/* Footer */}

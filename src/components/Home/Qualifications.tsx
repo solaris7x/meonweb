@@ -16,10 +16,11 @@ interface TabProps {
 }
 
 // TODO: Add info tab change on click
+// FIXME: Mobile view
 const Qualifications = (props: QualificationsProps) => {
   // Will Be undefined if no tabs are passed
   const infoItem = props.tabs[0]?.items
-  console.log(infoItem)
+  // console.log(infoItem)
   return (
     <section className="mt-16" id="qualification">
       <h2 className="text-4xl font-bold text-center">Qualifications</h2>
