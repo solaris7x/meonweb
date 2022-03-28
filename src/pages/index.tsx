@@ -20,22 +20,27 @@ const Home: NextPage = () => {
             {
               name: "Home",
               href: "/",
+              icon: "uil:estate",
             },
             {
               name: "About",
               href: "/#about",
+              icon: "uil:user",
             },
             {
               name: "Skills",
               href: "/#skills",
+              icon: "uil:file-alt",
             },
             {
               name: "Qualifications",
               href: "/#qualification",
+              icon: "uil:graduation-cap",
             },
             {
               name: "Contact Me",
               href: "/#contact",
+              icon: "uil:message",
             },
           ]}
         />
