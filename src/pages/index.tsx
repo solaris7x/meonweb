@@ -8,14 +8,25 @@ import Qualifications from "../components/Home/Qualifications"
 import ContactMe from "../components/Home/ContactMe"
 import Footer from "../components/Footer"
 import NavBar from "../components/Home/NavBar"
+import { useEffect, useState } from "react"
 
 const Home: NextPage = () => {
+  // DARK: setup
+  const [darkMode, setDark] = useState(true)
+
+  const toggleDarkMode = () => {
+    setDark((prev) => !prev)
+  }
+
   return (
-    <>
+    <div className={darkMode ? "dark" : ""}>
       <CommonHeaders />
-      <>
+      {/* FIXME: Unintended whitespace above body , fixed by -ve margin */}
+      <div className="bg-white text-black dark:bg-[#212121] dark:text-[wheat] md:mt-0 relative">
         <NavBar
           title="Aditya Patil"
+          darkMode={darkMode}
+          toggleDarkMode={toggleDarkMode}
           links={[
             {
               name: "Home",
@@ -108,11 +119,11 @@ const Home: NextPage = () => {
                     title: "NodeJS",
                   },
                   {
-                    icon: "logos:html-5",
+                    icon: "vscode-icons:file-type-html",
                     title: "HTML",
                   },
                   {
-                    icon: "logos:css-3",
+                    icon: "vscode-icons:file-type-css",
                     title: "CSS",
                   },
                 ],
@@ -240,8 +251,8 @@ const Home: NextPage = () => {
         {/* <a href="#" className="scrollup" id="scroll-up">
           <Icon icon="uil:arrow-up" className=" scrollup_icon" />
         </a> */}
-      </>
-    </>
+      </div>
+    </div>
   )
 }
 

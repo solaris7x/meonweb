@@ -9,13 +9,16 @@ interface NavBarProps {
     href: string
     icon: string
   }[]
+  darkMode: boolean
+  toggleDarkMode: () => void
 }
 
 const NavBar = (props: NavBarProps) => {
   const [mobileMenuHidden, setMobileMenuHidden] = useState<boolean>(true)
 
   return (
-    <header className="w-full fixed bottom-0 md:bottom-auto md:top-0 bg-white">
+    // DARK: bg
+    <header className="w-full fixed bottom-0 md:bottom-auto md:top-0 bg-white dark:bg-[#212121]">
       {/* Mobile Menu */}
       {/* <div className="h-24 bg-cyan-300"></div> */}
       <nav className="py-3 md:py-6 px-4 md:px-8 flex items-center">
@@ -25,8 +28,9 @@ const NavBar = (props: NavBarProps) => {
         </Link>
 
         {/* Menu */}
+        {/* DARK: bg */}
         <div
-          className={`md:ml-auto absolute bottom-0 left-0 md:static md:block bg-white w-full md:w-auto ${
+          className={`md:ml-auto absolute bottom-0 left-0 md:static md:block bg-white dark:bg-[#212121] w-full md:w-auto ${
             mobileMenuHidden ? "hidden" : "block"
           }`}
         >
@@ -58,8 +62,11 @@ const NavBar = (props: NavBarProps) => {
         </div>
 
         {/* Theme toggle */}
-        <button className="ml-auto md:ml-8 p-2 text-lg hover:text-violet-500">
-          <Icon icon="bi:moon" />
+        <button
+          className="ml-auto md:ml-8 p-2 text-lg hover:text-violet-500"
+          onClick={() => props.toggleDarkMode()}
+        >
+          <Icon icon={props.darkMode ? "bi:moon" : "bi:sun"} />
         </button>
 
         {/* Mobile Menu button */}

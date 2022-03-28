@@ -42,7 +42,7 @@ const Splash = (props: SplashProps) => {
     }
   }, [props.profession])
   return (
-    <section className="mt-5" id="home">
+    <section className="" id="home">
       <div className="min-h-[80vh] flex flex-col md:flex-row">
         {/* Social Buttons */}
         <div className="flex flex-row md:flex-col justify-center text-2xl text-violet-500">
@@ -64,7 +64,7 @@ const Splash = (props: SplashProps) => {
               I am <span ref={iamRef}></span> {props.professionSuffix}
             </h3>
             <p className="">{props.subtitle}</p>
-            <button className="bg-violet-500 text-white rounded-lg self-start">
+            <button className="bg-violet-500 text-white dark:text-[wheat] rounded-lg self-start">
               <a href="#contact" className="flex items-center p-4">
                 Contact Me
                 <Icon icon="uil:message" className="" />

@@ -16,8 +16,8 @@ interface FooterProps {
 
 const Footer = (props: FooterProps) => {
   return (
-    <footer className="bg-violet-500 text-white py-12 px-2 mt-10">
-      <div className="grid grid-rows-3 md:grid-rows-1 md:grid-cols-3 gap-4 mx-[10%]">
+    <footer className="bg-violet-500 text-white dark:text-[wheat] py-12 px-2 mt-10">
+      <div className="flex flex-col md:grid grid-rows-3 md:grid-rows-1 md:grid-cols-3 gap-4 mx-[10%]">
         {/* Footer Name */}
         <div className="text-center md:text-left">
           <h1 className="text-4xl font-bold">{props.name}</h1>

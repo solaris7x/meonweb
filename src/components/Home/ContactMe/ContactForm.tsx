@@ -54,7 +54,7 @@ const ContactForm = () => {
       <div className="">
         <button
           type="submit"
-          className="bg-violet-500 text-white rounded-lg p-2 flex items-center"
+          className="bg-violet-500 text-white dark:text-[wheat] rounded-lg p-2 flex items-center"
         >
           Send Message
           <Icon icon="uil:message" className="mx-1" />

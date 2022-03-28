@@ -17,7 +17,11 @@ const SkillItem = (props: SkillItemProps) => {
     <li className="py-4 border-b border-purple-400">
       <div className="flex items-center">
         {/* Logo */}
-        <Icon icon={props.icon} className="mx-2 text-3xl " />
+        {/* DARK: logo bg */}
+        <Icon
+          icon={props.icon}
+          className="mx-2 p-1 rounded-lg text-5xl max-w-[4rem] dark:bg-gray-200"
+        />
         {/* Title */}
         <div className="text-xl font-semibold ml-auto">{props.title}</div>
       </div>
