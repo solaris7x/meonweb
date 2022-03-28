@@ -19,7 +19,7 @@ const Footer = (props: FooterProps) => {
     <footer className="bg-violet-500 text-white py-12 px-2 mt-10">
       <div className="grid grid-rows-3 md:grid-rows-1 md:grid-cols-3 gap-4 mx-[10%]">
         {/* Footer Name */}
-        <div>
+        <div className="text-center md:text-left">
           <h1 className="text-4xl font-bold">{props.name}</h1>
           <div className="my-4">{props.subtitle}</div>
         </div>
@@ -36,7 +36,7 @@ const Footer = (props: FooterProps) => {
         </ul>
 
         {/* Footer Social */}
-        <div className="flex gap-4 justify-end text-xl">
+        <div className="flex gap-4 justify-center md:justify-end text-xl">
           {props.social.map((social, index) => (
             <Link key={index} href={social.link}>
               <a target="_blank" className="">

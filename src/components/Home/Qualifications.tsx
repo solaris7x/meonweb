@@ -16,7 +16,6 @@ interface TabProps {
 }
 
 // TODO: Add info tab change on click
-// FIXME: Mobile view
 const Qualifications = (props: QualificationsProps) => {
   // Will Be undefined if no tabs are passed
   const infoItem = props.tabs[0]?.items
@@ -38,7 +37,7 @@ const Qualifications = (props: QualificationsProps) => {
         ))}
       </div>
       {/* Items div block */}
-      <div className="mx-16 my-8">
+      <div className="md:mx-16 my-8">
         {/* Item Grid*/}
         {infoItem?.map((item, index) => {
           const skipGridItem = index % 2 === 0
