@@ -19,11 +19,7 @@ const CommonHeaders = () => {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content="Aditya Patil" />
       <title>Aditya Patil</title>
-      <link
-        rel="shortcut icon"
-        href="./assets/img/favicon.ico"
-        type="image/x-icon"
-      />
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       {/* <script src="https://kit.fontawesome.com/4bf48f78b4.js" crossOrigin="anonymous"></script> */}
     </Head>
   )

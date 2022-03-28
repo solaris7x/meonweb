@@ -7,14 +7,38 @@ import Skills from "../components/Home/Skills"
 import Qualifications from "../components/Home/Qualifications"
 import ContactMe from "../components/Home/ContactMe"
 import Footer from "../components/Footer"
+import NavBar from "../components/Home/NavBar"
 
 const Home: NextPage = () => {
   return (
     <>
       <CommonHeaders />
-      <>
-        {/* <NavBar /> */}
-        <div className="h-16 bg-violet-400 w-full"></div>
+      <div>
+        <NavBar
+          title="Aditya Patil"
+          links={[
+            {
+              name: "Home",
+              href: "/",
+            },
+            {
+              name: "About",
+              href: "/#about",
+            },
+            {
+              name: "Skills",
+              href: "/#skills",
+            },
+            {
+              name: "Qualifications",
+              href: "/#qualification",
+            },
+            {
+              name: "Contact Me",
+              href: "/#contact",
+            },
+          ]}
+        />
         {/* Main */}
         <main className="mx-[15%]">
           {/* Home */}
@@ -112,7 +136,7 @@ const Home: NextPage = () => {
         {/* <a href="#" className="scrollup" id="scroll-up">
           <Icon icon="uil:arrow-up" className=" scrollup_icon" />
         </a> */}
-      </>
+      </div>
     </>
   )
 }
