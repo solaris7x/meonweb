@@ -83,14 +83,17 @@ const Home: NextPage = () => {
                 {
                   icon: "uil:linkedin-alt",
                   href: "https://www.linkedin.com/in/patil11aditya/",
+                  name: "LinkedIn",
                 },
                 {
                   icon: "uil:github-alt",
                   href: "https://github.com/solaris7x",
+                  name: "Github",
                 },
                 {
                   icon: "uil:twitter-alt",
                   href: "https://twitter.com/_solaris7",
+                  name: "Twitter",
                 },
               ]}
             />
@@ -251,14 +254,17 @@ const Home: NextPage = () => {
               {
                 icon: "uil:linkedin-alt",
                 link: "https://www.linkedin.com/in/patil11aditya/",
+                name: "LinkedIn",
               },
               {
                 icon: "uil:twitter-alt",
                 link: "https://twitter.com/_solaris7",
+                name: "Twitter",
               },
               {
                 icon: "uil:github",
                 link: "https://github.com/solaris7x",
+                name: "Github",
               },
             ]}
           />

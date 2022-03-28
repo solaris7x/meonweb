@@ -11,6 +11,7 @@ interface FooterProps {
   social: {
     link: string
     icon: string
+    name: string
   }[]
 }
 
@@ -39,7 +40,7 @@ const Footer = (props: FooterProps) => {
         <div className="flex gap-4 justify-center md:justify-end text-xl">
           {props.social.map((social, index) => (
             <Link key={index} href={social.link}>
-              <a target="_blank" className="">
+              <a target="_blank" className="" aria-label={social.name}>
                 <Icon icon={social.icon} className="" />
               </a>
             </Link>

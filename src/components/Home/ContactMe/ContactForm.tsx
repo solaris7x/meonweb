@@ -43,45 +43,53 @@ const ContactForm = () => {
       <div className="flex content-between gap-4">
         {/* Name */}
         <div className="p-2 bg-gray-200 rounded-md w-full">
-          <label className="block text-sm text-gray-800">Name</label>
-          <input
-            className="bg-transparent outline-none focus:outline-none w-full"
-            type="text"
-            {...register("name", { required: true })}
-            required
-          />
+          <label className="block text-sm text-gray-800">
+            Name
+            <input
+              className="bg-transparent outline-none focus:outline-none w-full"
+              type="text"
+              {...register("name", { required: true })}
+              required
+            />
+          </label>
         </div>
         {/* Email */}
         <div className="p-2 bg-gray-200 rounded-md w-full">
-          <label className="block text-sm text-gray-800">Email</label>
-          <input
-            className="bg-transparent outline-none focus:outline-none w-full"
-            type="email"
-            {...register("email", { required: true })}
-            required
-          />
+          <label className="block text-sm text-gray-800">
+            Email
+            <input
+              className="bg-transparent outline-none focus:outline-none w-full"
+              type="email"
+              {...register("email", { required: true })}
+              required
+            />
+          </label>
         </div>
       </div>
       {/* Subject */}
       <div className="p-2 bg-gray-200 rounded-md">
-        <label className="block text-sm text-gray-800">Subject</label>
-        <input
-          className="bg-transparent outline-none focus:outline-none w-full"
-          type="text"
-          {...register("subject", { required: true })}
-          required
-        />
+        <label className="block text-sm text-gray-800">
+          Subject
+          <input
+            className="bg-transparent outline-none focus:outline-none w-full"
+            type="text"
+            {...register("subject", { required: true })}
+            required
+          />
+        </label>
       </div>
       {/* Message */}
       <div className="p-2 bg-gray-200 rounded-md">
-        <label className="block text-sm text-gray-800">Message</label>
-        <textarea
-          className="bg-transparent outline-none focus:outline-none w-full"
-          {...register("message", { required: true })}
-          cols={0}
-          rows={7}
-          required
-        />
+        <label className="block text-sm text-gray-800">
+          Message
+          <textarea
+            className="bg-transparent outline-none focus:outline-none w-full"
+            {...register("message", { required: true })}
+            cols={0}
+            rows={7}
+            required
+          />
+        </label>
       </div>
       {/* Submit */}
       <div className="">

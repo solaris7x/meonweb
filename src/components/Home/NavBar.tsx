@@ -52,6 +52,7 @@ const NavBar = (props: NavBarProps) => {
               onClick={() => {
                 setMobileMenuHidden((prev) => !prev)
               }}
+              aria-label="Hide Menu"
             >
               <Icon
                 icon="ant-design:close-circle-outlined"
@@ -65,6 +66,7 @@ const NavBar = (props: NavBarProps) => {
         <button
           className="ml-auto md:ml-8 p-2 text-lg hover:text-violet-500"
           onClick={() => props.toggleDarkMode()}
+          aria-label="Toggle dark mode"
         >
           <Icon icon={props.darkMode ? "bi:moon" : "bi:sun"} />
         </button>
@@ -75,6 +77,7 @@ const NavBar = (props: NavBarProps) => {
           onClick={() => {
             setMobileMenuHidden((prev) => !prev)
           }}
+          aria-label="Toggle mobile menu"
         >
           <Icon icon="uil:apps" />
         </button>

@@ -12,6 +12,7 @@ interface SplashProps {
   social: {
     icon: string
     href: string
+    name: string
   }[]
 }
 
@@ -48,7 +49,7 @@ const Splash = (props: SplashProps) => {
         <div className="flex flex-row md:flex-col justify-center text-2xl text-violet-500">
           {props.social.map((social, index) => (
             <Link key={index} href={social.href}>
-              <a className="" target="_blank">
+              <a className="" target="_blank" aria-label={social.name}>
                 <Icon icon={social.icon} className="m-3" />
               </a>
             </Link>
