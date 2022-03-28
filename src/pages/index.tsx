@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   return (
     <>
       <CommonHeaders />
-      <div>
+      <>
         <NavBar
           title="Aditya Patil"
           links={[
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
           ]}
         />
         {/* Main */}
-        <main className="mx-[15%]">
+        <main className="mx-[12%]">
           {/* Home */}
           <Splash />
           {/* About */}
@@ -141,7 +141,7 @@ const Home: NextPage = () => {
         {/* <a href="#" className="scrollup" id="scroll-up">
           <Icon icon="uil:arrow-up" className=" scrollup_icon" />
         </a> */}
-      </div>
+      </>
     </>
   )
 }

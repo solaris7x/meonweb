@@ -26,7 +26,7 @@ const NavBar = (props: NavBarProps) => {
 
         {/* Menu */}
         <div
-          className={`md:ml-auto absolute bottom-0 left-0 md:static bg-white w-full md:w-auto ${
+          className={`md:ml-auto absolute bottom-0 left-0 md:static md:block bg-white w-full md:w-auto ${
             mobileMenuHidden ? "hidden" : "block"
           }`}
         >
