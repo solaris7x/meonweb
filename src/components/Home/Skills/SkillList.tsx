@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react"
 import SkillItem, { SkillItemProps } from "./SkillItem"
 
-interface SkillListProps {
+export interface SkillListProps {
   icon: string
   title: string
   subtitle: string

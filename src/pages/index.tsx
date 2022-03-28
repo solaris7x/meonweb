@@ -47,11 +47,112 @@ const Home: NextPage = () => {
         {/* Main */}
         <main className="mx-[12%]">
           {/* Home */}
-          <Splash />
+          <Splash
+            name="Aditya"
+            profession={["an Cloud", "a Web", "a CI/CD"]}
+            professionSuffix="Developer"
+            subtitle="Open-Source enthusiast and self learner, believes in the power of
+            community."
+            coverImgLink="./assets/img/me.jpg"
+            social={[
+              {
+                icon: "uil:linkedin-alt",
+                href: "https://www.linkedin.com/in/patil11aditya/",
+              },
+              {
+                icon: "uil:github-alt",
+                href: "https://github.com/solaris7x",
+              },
+              {
+                icon: "uil:twitter-alt",
+                href: "https://twitter.com/_solaris7",
+              },
+            ]}
+          />
           {/* About */}
-          <About />
+          <About
+            introduction="Hi! 👋 I'm Aditya, A Dev/Ops engineering that aims to provide a
+          seamless journey from development to operations with a strong grasp of
+          Web technologies and Cloud Computing Saas, PaaS, laaS deployment
+          pipelines. Well-versed in Linux-based OS (Debian, Ubuntu, alpine...),
+          containerization technology (Docker + compose), and cloud vendors
+          (GCP, AWS, Azure, Heroku, Netlify) applied to increase software
+          delivery velocity, improve service reliability. Frequently praised as
+          adaptable by my peers and enjoy working among a progressive team.
+          Additionally has a background in Cloud-Native App Development and MERN
+          stack."
+            resumeLink="/assets/pdf/Aditya-Resume.pdf"
+          />
           {/* Skills */}
-          <Skills />
+          <Skills
+            skillLists={[
+              {
+                icon: "ant-design:code-outlined",
+                title: "Runtimes",
+                subtitle: "Runtimes that I have picked up over the years",
+                skills: [
+                  {
+                    icon: "logos:python",
+                    title: "Python",
+                  },
+                  {
+                    icon: "logos:typescript-icon",
+                    title: "Typescript",
+                  },
+                  {
+                    icon: "logos:javascript",
+                    title: "Javascript",
+                  },
+                  {
+                    icon: "logos:nodejs",
+                    title: "NodeJS",
+                  },
+                  {
+                    icon: "logos:html-5",
+                    title: "HTML",
+                  },
+                  {
+                    icon: "logos:css-3",
+                    title: "CSS",
+                  },
+                ],
+              },
+              {
+                icon: "ant-design:code-sandbox-outlined",
+                title: "Libraries & Frameworks",
+                subtitle: "Libraries and Frameworks that I prefer to work with",
+                skills: [
+                  {
+                    icon: "logos:react",
+                    title: "ReactJS",
+                  },
+                  {
+                    icon: "logos:tailwindcss-icon",
+                    title: "TailwindCSS",
+                  },
+                ],
+              },
+              {
+                icon: "ant-design:tool-outlined",
+                title: "Tools",
+                subtitle: "Tools that I use to build my projects",
+                skills: [
+                  {
+                    icon: "logos:git",
+                    title: "Git",
+                  },
+                  {
+                    icon: "logos:github",
+                    title: "Github",
+                  },
+                  {
+                    icon: "logos:npm",
+                    title: "NPM",
+                  },
+                ],
+              },
+            ]}
+          />
           {/* Qualifications */}
           <Qualifications
             tabs={[
@@ -79,8 +180,6 @@ const Home: NextPage = () => {
               },
             ]}
           />
-          {/* TODO: Portfolio */}
-          {/* <section className="portfolio section" id="projects"></section> */}
           {/* Contact Me */}
           <ContactMe
             items={[
