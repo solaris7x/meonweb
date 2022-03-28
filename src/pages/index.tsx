@@ -1,7 +1,7 @@
 import type { NextPage } from "next"
 import { useState } from "react"
 
-import CommonHeaders from "../components/Home/CommonHeaders"
+import HomeHeaders from "../components/Home/HomeHeaders"
 import Splash from "../components/Home/Splash"
 import About from "../components/Home/About"
 import Skills from "../components/Home/Skills"
@@ -35,8 +35,7 @@ const Home: NextPage = () => {
   return (
     <NotificationContext.Provider value={addNotification}>
       <div className={darkMode ? "dark" : ""}>
-        <CommonHeaders />
-        {/* FIXME: Unintended whitespace above body , fixed by -ve margin */}
+        <HomeHeaders />
         <div className="bg-white text-black dark:bg-[#212121] dark:text-[wheat] md:mt-0 relative">
           <NavBar
             title="Aditya Patil"

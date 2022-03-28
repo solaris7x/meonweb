@@ -60,9 +60,9 @@ const Splash = (props: SplashProps) => {
             <h1 className="text-5xl font-bold">
               Hi, I{"'"}m {props.name}
             </h1>
-            <h3 className="text-2xl text-gray-500">
+            <h2 className="text-2xl text-gray-500">
               I am <span ref={iamRef}></span> {props.professionSuffix}
-            </h3>
+            </h2>
             <p className="">{props.subtitle}</p>
             <button className="bg-violet-500 text-white dark:text-[wheat] rounded-lg self-start">
               <a href="#contact" className="flex items-center p-4">
