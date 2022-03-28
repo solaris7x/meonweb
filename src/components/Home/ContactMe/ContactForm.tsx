@@ -1,16 +1,43 @@
 import { Icon } from "@iconify/react"
+import { useContext } from "react"
 import { useForm } from "react-hook-form"
-import contactFormSubmit, {
-  ContactFormValuesType,
-} from "../../functions/contactFormSubmit"
+import { NotificationContext } from "../../Context/notification"
+import { ContactFormValuesType } from "../../functions/contactFormSubmit"
 
 const ContactForm = () => {
   const { register, handleSubmit } = useForm<ContactFormValuesType>()
 
+  // Get notification context
+  const addNotification = useContext(NotificationContext)
+
   return (
     <form
       className="grid grid-cols-1 gap-4 text-black"
-      onSubmit={handleSubmit(contactFormSubmit)}
+      onSubmit={handleSubmit(async (data, event) => {
+        // console.log({ data, event })
+        try {
+          const formfetch = await fetch(
+            `${process.env.NEXT_PUBLIC_FORMPOST_URL}`,
+            {
+              method: "POST",
+              body: JSON.stringify(data),
+              headers: {
+                Accept: "application/json",
+              },
+            }
+          )
+          if (!formfetch.ok)
+            throw new Error(
+              `Error while sending form: ${formfetch.status} ${formfetch.statusText}`
+            )
+          console.log("✅Submitted the form")
+          addNotification("✅Submitted the form")
+        } catch (error) {
+          console.log({ error })
+          console.log("❌Cloudn't submit the form")
+          addNotification("❌Cloudn't submit the form")
+        }
+      })}
       method="POST"
     >
       <div className="flex content-between gap-4">
