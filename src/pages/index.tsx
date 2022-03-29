@@ -12,13 +12,6 @@ import NavBar from "../components/Home/NavBar"
 import { NotificationContext } from "../components/Context/notification"
 
 const Home: NextPage = () => {
-  // DARK: setup
-  const [darkMode, setDark] = useState(true)
-
-  const toggleDarkMode = () => {
-    setDark((prev) => !prev)
-  }
-
   // Notification state
   const [notification, setNotification] = useState<
     { message: string; key: number }[]
@@ -30,6 +23,14 @@ const Home: NextPage = () => {
     setTimeout(() => {
       setNotification((prev) => prev.filter((ele) => ele.key !== key))
     }, 5000)
+  }
+
+  // DARK: setup
+  const [darkMode, setDark] = useState(true)
+
+  const toggleDarkMode = () => {
+    addNotification(`🌓 Switched to ${darkMode ? "light" : "dark"} mode`)
+    setDark((prev) => !prev)
   }
 
   return (
