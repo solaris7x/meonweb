@@ -121,10 +121,6 @@ const Home: NextPage = () => {
                   subtitle: "Runtimes that I have picked up over the years",
                   skills: [
                     {
-                      icon: "logos:python",
-                      title: "Python",
-                    },
-                    {
                       icon: "logos:typescript-icon",
                       title: "Typescript",
                     },
@@ -137,12 +133,20 @@ const Home: NextPage = () => {
                       title: "NodeJS",
                     },
                     {
-                      icon: "vscode-icons:file-type-html",
-                      title: "HTML",
+                      icon: "logos:python",
+                      title: "Python",
                     },
                     {
-                      icon: "vscode-icons:file-type-css",
-                      title: "CSS",
+                      icon: "vscode-icons:file-type-html",
+                      title: "HTML & CSS",
+                    },
+                    {
+                      title: "Mysql",
+                      icon: "logos:mysql",
+                    },
+                    {
+                      title: "MongoDB",
+                      icon: "logos:mongodb",
                     },
                   ],
                 },
@@ -160,12 +164,32 @@ const Home: NextPage = () => {
                       icon: "logos:tailwindcss-icon",
                       title: "TailwindCSS",
                     },
+                    {
+                      title: "NextJS",
+                      icon: "logos:nextjs",
+                    },
+                    {
+                      title: "ExpressJS",
+                      icon: "logos:express",
+                    },
+                    {
+                      title: "Apollo GraphQL",
+                      icon: "logos:graphql",
+                    },
+                    {
+                      title: "Realm",
+                      icon: "logos:realm",
+                    },
+                    {
+                      title: "RabbitMQ",
+                      icon: "logos:rabbitmq-icon",
+                    },
                   ],
                 },
                 {
                   icon: "ant-design:tool-outlined",
                   title: "Tools",
-                  subtitle: "Tools that I use to build my projects",
+                  subtitle: "Tools that I use to build and deploy my projects",
                   skills: [
                     {
                       icon: "logos:git",
@@ -173,11 +197,27 @@ const Home: NextPage = () => {
                     },
                     {
                       icon: "logos:github",
-                      title: "Github",
+                      title: "Github Actions",
                     },
                     {
-                      icon: "logos:npm",
-                      title: "NPM",
+                      title: "Docker",
+                      icon: "logos:docker-icon",
+                    },
+                    {
+                      title: "Ansible",
+                      icon: "logos:ansible",
+                    },
+                    {
+                      title: "Kubernetes",
+                      icon: "logos:kubernetes",
+                    },
+                    {
+                      title: "Cloudflare Workers",
+                      icon: "logos:cloudflare",
+                    },
+                    {
+                      title: "Vite",
+                      icon: "logos:vitejs",
                     },
                   ],
                 },
