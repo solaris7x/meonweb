@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Icon } from "@iconify/react"
 import ContactForm from "./ContactMe/ContactForm"
 
-interface ContactMeProps {
+export interface ContactMeProps {
   items: {
     icon: string
     title: string

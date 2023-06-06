@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react"
 import { Icon } from "@iconify/react"
 import Typed from "typed.js"
 
-interface SplashProps {
+export interface SplashProps {
   name: string
   profession: string[]
   professionSuffix: string

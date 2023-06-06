@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react"
 
-interface AboutProps {
+export interface AboutProps {
   introduction: string
   resumeLink: string
 }

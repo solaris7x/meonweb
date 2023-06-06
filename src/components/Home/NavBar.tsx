@@ -2,13 +2,16 @@ import Link from "next/link"
 import { Icon } from "@iconify/react"
 import { useState } from "react"
 
-interface NavBarProps {
+export interface NavBarDataProps {
   title: string
   links: {
     name: string
     href: string
     icon: string
   }[]
+}
+
+interface NavBarProps extends NavBarDataProps {
   darkMode: boolean
   toggleDarkMode: () => void
 }

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Icon } from "@iconify/react"
 
-interface FooterProps {
+export interface FooterProps {
   name: string
   subtitle: string
   links: {

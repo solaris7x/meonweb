@@ -1,6 +1,6 @@
 import SkillList, { SkillListProps } from "./Skills/SkillList"
 
-interface SkillsProps {
+export interface SkillsProps {
   skillLists: SkillListProps[]
 }
 

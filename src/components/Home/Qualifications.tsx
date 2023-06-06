@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react"
 import InfoGridItem from "./Qualifications/InfoGridItem"
 
-interface QualificationsProps {
+export interface QualificationsProps {
   tabs: TabProps[]
 }
 

@@ -1,12 +1,17 @@
 import Head from "next/head"
 
-const HomeHeaders = () => {
+export interface HomeHeadersProps {
+  title?: string
+  description?: string
+}
+
+const HomeHeaders = (props: HomeHeadersProps) => {
   return (
     <Head>
-      <title>Aditya Patil</title>
+      <title>{props.title || "Me On Web"}</title>
       <meta
         property="og:description"
-        content="Aditya is Dev/Ops Engineer and Open-Source enthusiast."
+        content={props.description || "My Web portfolio"}
       />
     </Head>
   )
