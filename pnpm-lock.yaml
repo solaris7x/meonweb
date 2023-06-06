@@ -18,6 +18,7 @@ specifiers:
   typescript: 4.7.4
 
 dependencies:
+  '@iconify/react': 3.2.2_react@18.2.0
   next: 12.2.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -25,7 +26,6 @@ dependencies:
   typed.js: 2.0.12
 
 devDependencies:
-  '@iconify/react': 3.2.2_react@18.2.0
   '@types/node': 18.0.6
   '@types/react': 18.0.15
   autoprefixer: 10.4.7_postcss@8.4.14
@@ -91,7 +91,7 @@ packages:
       react: '>=16'
     dependencies:
       react: 18.2.0
-    dev: true
+    dev: false
 
   /@next/env/12.2.3:
     resolution: {integrity: sha512-2lWKP5Xcvnor70NaaROZXBvU8z9mFReePCG8NhZw6NyNGnPvC+8s+Cre/63LAB1LKzWw/e9bZJnQUg0gYFRb2Q==}
@@ -1830,6 +1830,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
 
   /read-cache/1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
