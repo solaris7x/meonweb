@@ -13,6 +13,8 @@ jobs:
       
       # Install pnpm package manager
       - uses: pnpm/action-setup@v2
+        with:
+          version: "7.6.0" 
 
       # a standard step for GitHub actions on Node
       # https://github.com/actions/setup-node
