@@ -76,7 +76,7 @@ export const profileData: profileDataProps = {
   },
   about: {
     introduction:
-      "Hi! 👋 I'm Aditya, A Dev/Ops engineering that aims to provide a seamless journey from development to operations with a strong grasp of Web technologies and Cloud Computing Saas, PaaS, laaS deployment pipelines. Well-versed in Linux-based OS (Debian, Ubuntu, alpine...), containerization technology (Docker + compose), and cloud vendors (GCP, AWS, Azure, Heroku, Netlify) applied to increase software delivery velocity, improve service reliability. Frequently praised as adaptable by my peers and enjoy working among a progressive team. Additionally has a background in Cloud-Native App Development and MERN stack.",
+      "Hi! 👋 I'm Aditya, Web Developer who aims to build cloud-native applications with a strong grasp of JavaScript along with Typescript and have previously completed projects with React and Angular . Well-versed in Web technologies (React, Angular, NextJS, ExpressJS, Java Spring, GraphQL) with Continuous integration and deployment pipelines, and experience in containerized application. Frequently praised as adaptable by my peers. Aiming to leverage a proven knowledge of IT strategy and web platform development skills to implement scalable, fast, and cloud-native solutions and enjoy working among a progressive team.  Additionally has a background in Cloud-Native App Development and Open-Source Development.",
     resumeLink: "/assets/pdf/Aditya-Resume.pdf",
   },
   skills: {
